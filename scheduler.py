@@ -5,7 +5,7 @@ def create_schedule(subjects):
         name, days, difficulty = subject
 
         # Simple priority logic
-        priority = (6 - days) * difficulty
+       priority = (difficulty * 2) + (10 / (days + 1))
 
         schedule.append((name, priority))
 
